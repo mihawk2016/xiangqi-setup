@@ -7,7 +7,7 @@ PIECE_PNG_FILES = $(patsubst %.svg,%.png,$(PIECE_SVG_FILES))
 all: $(PIECE_PNG_FILES)
 
 %.png: %.svg
-	convert -background none -define png:color-type=6 -depth 4 $< png:- \
+	convert -background none -define png:color-type=6 -bitrue_depth 4 $< png:- \
 		| pngquant 64 > $@
 
 $(wildcard 00?.png): a0.svg
