@@ -1,4 +1,6 @@
-/build
-/dist
+/.idea/
+/build/
+/dist/
+/venv/
 /MANIFEST
 *.pyc
